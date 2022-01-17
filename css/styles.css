@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0ex;
+}
+    
+:root {
+ --footer: hsl(215, 51%, 70%);
+ --data: hsl(178, 100%, 50%);
+ --main-bg: hsl(217, 54%, 11%);
+ --card-bg hsl(216, 50%, 16%);
+ --line: hsl(215, 32%, 27%);
+ --White: hsl(0, 0%, 100%); 
+}
+
+ /* General styles */
+ body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--main-bg);
+ }
+ .card {
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+     background: hsl(216, 50%, 16%);
+     margin: 100px 30px 40px 30px;
+     border-radius: 10px;
+     }
+ .image img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 85%;
+     border-radius: 5%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ .info {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 35px;
+    width: 85%;
+ }
+ h1 {
+     font-size: 24px;
+     font-weight: 600;
+ } 
+ h3 {
+     margin-top: 10px;
+     font-size: 16px;
+     font-weight: 300;
+ }
+ .data{
+     display: flex;
+    justify-content: space-between;
+    color: var(--data);
+ }
+ .eth, .time {
+     display: flex;
+ }
+ .eth img, .time img {
+     margin: 10px;
+     height: 15px;
+ }
+ 
+ footer {
+     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px var(--line) solid;
+    font-size: 14px;
+    color: var(--White);
+    
+ }
+ footer img {
+     display: flex;
+     height: 30px;
+     width: 30px;
+     border: 2px solid white;
+     border-radius: 50%;
+     margin-top: 50px;
+ }
+ footer a {
+    text-decoration: none;
+    color:var(--White);
+ }
+
+
+
+
