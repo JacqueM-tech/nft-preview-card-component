@@ -6,10 +6,10 @@
 }
     
 :root {
- --footer: hsl(215, 51%, 70%);
+ --soft-blue: hsl(215, 51%, 70%);
  --data: hsl(178, 100%, 50%);
  --main-bg: hsl(217, 54%, 11%);
- --card-bg hsl(216, 50%, 16%);
+ --card-bg: hsl(216, 50%, 16%);
  --line: hsl(215, 32%, 27%);
  --White: hsl(0, 0%, 100%); 
 }
@@ -18,6 +18,8 @@
  body {
     font-family: 'Outfit', sans-serif;
     background: var(--main-bg);
+    font-size: 16px;
+    padding-top: 70px;
  }
  .card {
      display: flex;
@@ -25,8 +27,9 @@
      justify-content: center;
      align-items: center;
      background: hsl(216, 50%, 16%);
-     margin: 100px 30px 40px 30px;
+     max-width: 85%;
      border-radius: 10px;
+     margin: auto;
      }
  .image img {
      display: block;
@@ -42,52 +45,87 @@
     display: flex;
     flex-flow: column wrap;
     line-height: 35px;
-    width: 85%;
+    max-width: 85%;
+    margin-bottom: 20px;
  }
  h1 {
-     font-size: 24px;
+     font-size: 1.5rem;
      font-weight: 600;
  } 
  h3 {
      margin-top: 10px;
-     font-size: 16px;
      font-weight: 300;
+     color: var(--soft-blue);
  }
  .data{
      display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--data);
+    margin-top: 10px;
  }
  .eth, .time {
      display: flex;
+     justify-content: space-between;
+     
  }
  .eth img, .time img {
-     margin: 10px;
+     display: flex;
+     margin: 10px 10px 0 0;
      height: 15px;
+ }
+ .time p {
+     color: var(--soft-blue);
  }
  
  footer {
-     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
-    border-top: 2px var(--line) solid;
-    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
     color: var(--White);
-    
+    margin: auto;
+    max-width: 85%;
+    width: 85%;
+    border-top: 2px var(--line) solid;
  }
- footer img {
+ .footer-items {
      display: flex;
-     height: 30px;
-     width: 30px;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px 0;
+ }
+   
+ footer img {
+     height: 40px;
+     width: 40px;
      border: 2px solid white;
      border-radius: 50%;
-     margin-top: 50px;
+     margin-right: 20px;
+ }
+ footer span {
+     color: var(--soft-blue);
  }
  footer a {
     text-decoration: none;
     color:var(--White);
+    margin-left: 4px;
+    
  }
 
+ /* TABLET STYLES */
+ @media screen and (min-width: 768px) {
+     .card {
+         width: 30%;
+         margin: auto;
+ }
+
+ /* DESKTOP STYLES */
+ @media screen and (min-width: 1440px){
+     .card {
+         width: 20%;
+     }
+     
+ }
 
 
 
